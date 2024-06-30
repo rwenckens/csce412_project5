@@ -1,0 +1,308 @@
+/** General Themes -------------------------------------------- */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: rgb(172, 144, 116);;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0; 
+}
+
+nav ul li {
+    margin-left: 40px; 
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; 
+    transition: color 0.3s;
+    font-family : 'Courier New', Courier, monospace;
+}
+
+a:hover {
+    color: maroon;
+}
+
+a {
+    color: maroon
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: white;
+}
+
+#logo {
+    width: 60px;
+}
+
+/** Landing Page -------------------------------------------- */
+
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.profile-pic-landing {
+    width: 20%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.howdy-name, .description {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.howdy-name {
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.description {
+    margin: 50px;
+    font-size: large;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    background: white;
+    color: black;
+    border-radius: 100px;
+    transition: all 1s ease-out;
+    margin: 10px; 
+}
+
+.button:hover {
+    background-color: maroon;
+    color: white;
+}
+
+#thumbnails {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.thumbnail {
+    width: 30%;
+    height: 250px;
+    margin: 0.5em;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none; 
+}
+
+.thumbnail-content {
+    width: 100%;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail:hover .thumbnail-content {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/** Portfolio -------------------------------------------------------- */
+
+#portfolio {
+    padding: 20px;
+}
+
+#project-image {
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    border: 1px solid #cecbcb;
+    padding: 40px;
+    max-width: 700px; 
+    margin: auto; 
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.margin-top {
+    margin-top: 20px; 
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: green;
+    width: 100%;
+}
+
+/** Qualifications -------------------- */
+
+.big-qual {
+    font-size: xx-large;
+}
+
+.tamu, .resume a, .resume a:visited, .resume a:hover, .resume a:active {
+    color: maroon;
+}
+
+.resume a {
+    text-align: left;
+    font-size: small;
+    color: white; 
+}
+
+.qualifications-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.big-qual, .tamu, .resume {
+    margin-bottom: 10px;
+}
+
+.tamu {
+    margin-bottom: 0;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.languages, .tools {
+    color: black;
+}
+
+.skills {
+    text-align: center;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.additional-info > div, .skills h1, .skills h2, .skills h3 {
+    margin: 10px;
+    padding: 20px;
+}
+
+.additional-info > div {
+    flex: 1;
+    border: 1px solid #cac6c6;
+    border-radius: 10px;
+}
+
+.skills h1 {
+    margin-bottom: 0.5em;
+}
+
+.skills h2 {
+    margin-bottom: 1em;
+}
+
+.skills h3 {
+    text-align: left;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.skills ul li {
+    background: #e6e4e4;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/** Service -------------------------- */
+.community-banner {
+    text-align: center;
+    padding: 20px; 
+    overflow: hidden; 
+}
+
+.community-picture {
+    width: 100%; 
+    max-height: 200px; 
+    object-fit: cover;
+    display: block; 
+    margin: 0 auto 20px;
+}
+
+.service-entry {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-image {
+    width: 40%;
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.service-description {
+    flex: 1; 
+    padding: 0 20px;
+}
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Portfolio</title>
+    <link id="mainStyleSheet" rel="stylesheet" href="firstStyle.css">
+    <script src="functions.js"></script>
+
+</head>
+<body>
+
+    <header>
+
+        <a href="index.html"><img src="Pictures/logo.png" alt="Logo" id="logo"></a>
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Landing Page</a></li>
+                <li><a href="technical-portfolio.html">Portfolio</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="ai-generated-page.html">AI Generated Page</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <main id="portfolio">
+
+        <h1>Technical Portfolio</h1>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="Pictures/graph.PNG" alt="Project Image" id="project-image">
+                <div class="project-details margin-top">
+                    <h2>Cave Exploration</h2>
+                    <p>In this project I implemented a single-threaded (soon to be multi-threaded) cave exploration tool using C++ and various Windows API functions.</p>
+                    <div class="date-bar">
+                        <span>January 2024</span>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>The goal of this project is to showcase various graph traversal algorithms by exploring threading and pipes by using the Windows API to talk to the kernel. To accomplish this task, a rover known as the command center must send out a number of flybots to find the exit. To make this more realistic, each vertices within the weighted graph, or cave in the cave system, has a specific light intensity. The closer you are to the exit of the cave system, the greater the light intensity. Users can select either BFS, DFS, A*, or a modified version of BFS prioritizing light intensity to traverse the cave system. </p>
+                    <a href="github.com">Github</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="Pictures/dsa.jpg" alt="Project Image" id="project-image">
+                <div class="project-details margin-top">
+                    <h2>Data Structures and Algorithms Implementation</h2>
+                    <p>This project is a culmination and implementation of the most important topics in Data Structures and Algorithms.</p>
+                    <div class="date-bar">
+                        <span>August 2023</span>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>The C++ standard template library is an extensive library providing users with an efficient and powerful abstraction of popular data structures at their fingertips, so why not replicate it? This project showcases my growth as a Computer Science student as I navigated through one of the most notorious and fundamental courses. I implemented unordered_map (hashmap with chaining), vector, list (linked list), and priority_queue. All implementations incorporate copy constructor, move constructor, destructor, copy assignment operator, and move assignment operator to follow the rule of five. Each of the data structures include their respective implementations of popular algorithms, along with custom iterators.</p>
+                    <a href="github.com">Github</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="Pictures/fib.PNG" alt="Project Image" id="project-image">
+                <div class="project-details margin-top">
+                    <h2>Optimized Fibonacci - Multiple Precision Addition</h2>
+                    <p>This project demonstrates how a simple algorithm can be tweaked to enhance performance by over 1000%.</p>
+                    <div class="date-bar">
+                        <span>November 2023</span>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <p>The standard recursive approach for calculating a fibonacci number is far from efficient and uses a considerable amount of stack space due to the amount of function calls. Furthermore, large numerical calculations in C++ are heavily limited by the range of standard datatypes. This project modifies a given multi-precision addition algorithm to handle large calculations from an iterative fibonnaci calculation. To optimize further, a portion of the multi-precision addition algorithm is written in x86-64 Assembly utilizing carry propogation and loop unrolling.</p>
+                    <a href="github.com">Github</a>
+                </div>
+            </div>
+        </div>            
+    </main>
+
+
+</body>
+</html>

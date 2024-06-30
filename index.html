@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link id="mainStyleSheet" rel="stylesheet" href="firstStyle.css">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html"><img src="Pictures/logo.png" alt="Logo" id="logo"></a>
+        <nav>
+            <ul class="header-text">
+                <li><a href="index.html">Landing Page</a></li>
+                <li><a href="technical-portfolio.html">Portfolio</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="ai-generated-page.html">AI Generated Page</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="welcome-section">
+
+            <img src="Pictures/gigem_riley.jpg" alt="Landing Page Profile Picture" class="profile-pic-landing">
+            <div class="content">
+
+                <h2 class="howdy-name">Howdy, I'm Riley Wenckens!</h2>
+                <p class="description">Welcome! I am a <a href="https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext">Texas A&M Computer Science</a> student planning to graduate in May 2025. Currently, I am immersing myself in a variety of classes, my personal favorites being principles of software engineering, and systems programming. Outside of the classroom, I love going to the gym, being outdoors, fishing, golfing, and playing chess. As a proactive learner, I hold the discipline and adaptability required to join your team. Feel free to view my portfolio, qualifications, service, toggle the CSS on this page, or even investigate the power of AI with my "AI Generated Page".</p>
+                
+                <div> 
+                    <a href="technical-portfolio.html" class="button" id="portfolio-button">My Portfolio</a>
+                    <a class="button" onclick="toggleStyleSheet()" id="toggle-button">Toggle Style</a>
+                </div>
+
+            </div>
+
+        </section>
+        
+        
+        <section id="thumbnails">
+
+            <a href="technical-portfolio.html" class="thumbnail" style="background-image: url('Pictures/technical-thumbnail.jpg');">
+                <div class="thumbnail-content">Technical Portfolio</div>
+            </a>
+        
+            <a href="qualifications.html" class="thumbnail" style="background-image: url('Pictures/qualifications-thumbnail.jpg');">
+                <div class="thumbnail-content">Qualifications</div>
+            </a>
+        
+            <a href="service.html" class="thumbnail" style="background-image: url('Pictures/service-thumbnail.jpg');">
+                <div class="thumbnail-content">Service</div>
+            </a>
+            
+        </section>
+        
+    </main>
+
+</body>
+</html>
